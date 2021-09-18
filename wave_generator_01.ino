@@ -28,12 +28,13 @@ void setup() {
  }
 }
 
+// print signals
 void loop() {
   for (int i = 0; i < na; i = i + 1) {  // copy a->b
     Serial.print(a[i]);
     Serial.print(",");
     Serial.print(b[i]);
-    Serial.print(",");
+    if (i < na-1) {Serial.print(",");}
  } 
- Serial.println (" ");
+Serial.println();
 }
