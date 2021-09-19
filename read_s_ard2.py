@@ -15,7 +15,7 @@ while True:
   line2=line.strip().decode('utf-8')
   data = [str(val) for val in line2.split(",")]
   print(line2)
-  if i<100 and len(data)==2 and data[0]!="":
+  if i<100 and len(data)==2 and data[0]!="" and data[1]!="":
     f.write(str(line2)+"\n")
     i=i+1
   else:
