@@ -3,7 +3,7 @@ float a[100],b[100];
 
 void setup() {
   // initialize serial comms
-  Serial.begin(9600);
+  Serial.begin(19200);
 // signal 1
   for (int i = 0; i < na; i = i + 1) {
   a[i]=20.0;
