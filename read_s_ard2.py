@@ -9,13 +9,13 @@ print("connected to: " + ser.portstr)
 time.sleep(1)
 
 i=0
-f = open("signal_test.csv", "w")
+f = open("signal_test2.csv", "w")
 while True:
   line = ser.readline()
   line2=line.strip().decode('utf-8')
   data = [str(val) for val in line2.split(",")]
   print(line2)
-  if i<100:
+  if i<100 and len(data)==2 and data[0]!="":
     f.write(str(line2)+"\n")
     i=i+1
   else:
