@@ -39,7 +39,7 @@ void loop() {
   // print temps at 2points
   Serial.print(a[29]);  
   Serial.print(",");
-  Serial.print(b[79]);
+  Serial.print(b[29]);
   Serial.println();
-  delay(100);
+  delay(50);
 }
